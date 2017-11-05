@@ -15,7 +15,7 @@ export default ({
   } = data;
   console.log(data, current, success);
   return (
-    <div id="results" className="col-10 col-sm-6 col-md-10 mx-auto">
+    <div id="results" className="col-10 col-xl-6 mx-auto">
       {isLoading ? <Loader /> : null}
       {
         success
