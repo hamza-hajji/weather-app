@@ -4,21 +4,19 @@ import './App.css';
 
 import {loadData} from './actions';
 
+import Header from './components/Header';
+import Results from './components/Results';
+
 class App extends Component {
   componentDidMount() {
     this.props.loadData('Kenitra');
   }
 
   render() {
-    const {
-      isLoading,
-      success,
-      data
-    } = this.props.weather;
     return (
-      <div className="App">
-        {isLoading ? <p>Loading...</p> : ''}
-        {success ? data.location.name : ''}
+      <div>
+        <Header />
+        <Results {...this.props.weather} />
       </div>
     );
   }

@@ -1,0 +1,35 @@
+.main-header {
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main-header h1 {
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+}
+
+#results {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2rem;
+  margin: 0 auto;
+  width: 30%;
+  padding: 1rem;
+  background: #ccc;
+  text-align: center;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #ccc; /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: 2rem auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
