@@ -22,9 +22,13 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Header />
-        <Results {...this.props.weather} changeUnit={this.changeUnit.bind(this)} {...this.state} />
+      <div className="container text-center">
+        <div className="row">
+          <Header />
+        </div>
+        <div className="row">
+          <Results {...this.props.weather} changeUnit={this.changeUnit.bind(this)} {...this.state} />
+        </div>
       </div>
     );
   }

@@ -20,8 +20,6 @@ body {
 #results {
   font-family: 'Arvo', serif;
   font-size: 2rem;
-  margin: 0 auto;
-  width: 30%;
   box-shadow: 0 0 5px 5px rgb(204,79,57);
   padding: 1rem;
   background: rgb(255,183,134);
