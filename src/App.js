@@ -9,18 +9,22 @@ import Results from './components/Results';
 
 class App extends Component {
   state={
-    
+    isC: true
   }
 
   componentDidMount() {
     this.props.loadData('Kenitra');
   }
 
+  changeUnit() {
+    this.setState({isC: !this.state.isC});
+  }
+
   render() {
     return (
       <div>
         <Header />
-        <Results {...this.props.weather} />
+        <Results {...this.props.weather} changeUnit={this.changeUnit.bind(this)} {...this.state} />
       </div>
     );
   }
