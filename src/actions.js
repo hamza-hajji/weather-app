@@ -1,3 +1,10 @@
+import fetchWeather from './api';
+import {
+  LOADING_DATA,
+  LOADING_DATA_SUCCESS,
+  LOADING_DATA_FAILURE
+} from './constants';
+
 export function getData() {
   return {
     type: LOADING_DATA
@@ -17,8 +24,11 @@ export function getDataFailure() {
   }
 }
 
-export function loadData() {
+export function loadData(city) {
   return (dispatch) => {
-    
+    dispatch(getData());
+    fetchWeather(city)
+      .then(data => {dispatch(getDataSuccess(data))})
+      .catch(error => console.log(error));
   };
 }
