@@ -1,27 +1,51 @@
+body {
+  background-color: rgb(240,155,108);
+  color: rgb(204,79,57);
+}
+
 .main-header {
   font-size: 2rem;
   padding: 2rem;
   text-align: center;
+  color: rgb(204,79,57);
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .main-header h1 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Righteous', cursive;
   margin: 0;
 }
 
 #results {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Arvo', serif;
   font-size: 2rem;
   margin: 0 auto;
   width: 30%;
+  box-shadow: 0 0 5px 5px rgb(204,79,57);
   padding: 1rem;
-  background: #ccc;
+  background: rgb(255,183,134);
   text-align: center;
+  border-radius: .5rem;
+}
+
+#results img {
+  margin-bottom: -2rem;
+}
+
+#results h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.unit {
+  color: rgb(220,120,57);
+  cursor: pointer;
 }
 
 .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #ccc; /* Blue */
+    border: 16px solid rgb(255,210,164); /* Light grey */
+    border-top: 16px solid rgb(204,79,57);
     border-radius: 50%;
     width: 80px;
     height: 80px;

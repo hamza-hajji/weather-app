@@ -8,6 +8,10 @@ import Header from './components/Header';
 import Results from './components/Results';
 
 class App extends Component {
+  state={
+    
+  }
+
   componentDidMount() {
     this.props.loadData('Kenitra');
   }
